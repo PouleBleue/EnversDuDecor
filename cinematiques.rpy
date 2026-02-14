@@ -89,7 +89,6 @@ label splashscreen:
     pause 2.0
     hide text with dissolve
 
-    # Texte de prévention (Affiché seul pour une lecture claire)
     show text "{size=28}L’Envers du Décor est un thriller psychologique traitant de sujets graves et matures.\nBien que l'œuvre ne comporte aucune scène sexuelle explicite,\nle récit aborde des thématiques lourdes telles que :\n\n- Les violences sexuelles et le viol (mentions et conséquences psychologiques)\n- Le harcèlement et l'aliénation\n- Le suicide et les troubles de la santé mentale\n\nCe jeu est destiné à un public capable d'aborder ces sujets avec recul.\nLa discrétion du spectateur est conseillée.{/size}" at truecenter with dissolve
     
     # On attend un clic pour être sûr que l'utilisateur a lu
@@ -105,11 +104,10 @@ label splashscreen:
         "Quitter le jeu.":
             $ renpy.quit()
 
-    # --- PHASE 2 : IMMERSION (TON SLOGAN) ---
     scene black
     with Pause(1.0)
 
-    # Animation de ton slogan "Votre pire cauchemar..."
+
     show text "{size=40}{color=#ffffff}Votre pire cauchemar est leur meilleur programme.{/color}{/size}":
         align (0.5, 0.5)
         alpha 0.0
@@ -208,5 +206,6 @@ label splashscreen:
     # --- PHASE 5 : TRANSITION VERS LE MENU ---
     scene black with dissolve
     pause 3.0
+
 
     return 
